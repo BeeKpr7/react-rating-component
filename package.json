@@ -1,5 +1,8 @@
 {
-  "name": "react-rating-box",
+  "name": "@BeeKpr7/react-rating-component",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/BeeKpr7"
+  },
   "version": "0.0.1",
   "scripts": {
     "rollup": "rollup -c"

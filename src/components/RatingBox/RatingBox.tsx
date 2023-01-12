@@ -6,7 +6,7 @@ export interface RatingComponentProps {
   submit:string;
 }
 
-const RatingComponent = ({title, message, submit}: RatingComponentProps) => {
+const RatingBox = ({title, message, submit}: RatingComponentProps) => {
   return (
             
             <div className="RatingBox">
@@ -26,4 +26,4 @@ const RatingComponent = ({title, message, submit}: RatingComponentProps) => {
   )
 };
 
-export default RatingComponent;
+export default RatingBox;
