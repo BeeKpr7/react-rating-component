@@ -20,10 +20,12 @@ const RatingBox = ({title=defaultValue.title,
   return (
             
             <div className="RatingBox">
-                <Star/>
+                <div className="svg">
+                  <Star/>
+                </div>
                 <h4>{title}</h4>
                 <p>{message}</p>
-                  <div>
+                  <div className="radio-input">
                       <div><input type="radio" value="2" name="rate"/><label>2</label></div>
                       <div><input type="radio" value="1" name="rate"/><label>1</label></div>
                       <div><input type="radio" value="3" name="rate"/><label>3</label></div>

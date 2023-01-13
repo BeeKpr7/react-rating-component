@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/BeeKpr7"
   },
-  "version": "0.0.11",
+  "version": "0.0.12",
   "scripts": {
     "rollup": "rollup -c"
   },
