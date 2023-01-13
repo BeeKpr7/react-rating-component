@@ -19,15 +19,15 @@ const RatingBox = ({title=defaultValue.title,
   return (
             
             <div className="RatingBox">
-                <img src="" alt="" />
+                <img src="../img/icon-star.svg" alt="icon-star" />
                 <h4>{title}</h4>
                 <p>{message}</p>
                   <div>
-                      <input type="radio" value="1" name="rate"/><label>1</label>
-                      <input type="radio" value="2" name="rate"/><label>2</label>
-                      <input type="radio" value="3" name="rate"/><label>3</label>
-                      <input type="radio" value="4" name="rate"/><label>4</label>
-                      <input type="radio" value="5" name="rate"/><label>5</label>
+                      <div><input type="radio" value="2" name="rate"/><label>2</label></div>
+                      <div><input type="radio" value="1" name="rate"/><label>1</label></div>
+                      <div><input type="radio" value="3" name="rate"/><label>3</label></div>
+                      <div><input type="radio" value="4" name="rate"/><label>4</label></div>
+                      <div><input type="radio" value="5" name="rate"/><label>5</label></div>
                   </div>
                 <button>{submit}</button>
             </div>

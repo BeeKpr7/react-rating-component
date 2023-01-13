@@ -1,3 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 .RatingBox {
-    color:red;
+  font-family: "Overpass";
+  position: absolute;
+  height: 26rem;
+  width: 26rem;
+  top: 50%;
+  left: 50%;
+  margin-top: -13rem;
+  margin-left: -13rem;
+  /* Black (Gradient) */
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  border-radius: 30px;
+  text-align: left;
+}
+.RatingBox h4, .RatingBox img, .RatingBox p,.RatingBox div, .RatingBox button {
+  margin: 1rem 2.5rem;
+}
+.RatingBox h4 {
+  color : white;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.RatingBox p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #969FAD;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.RatingBox div {
+  display: flex;
+  justify-content: space-between;
+}
+.RatingBox input[type="radio"] {
+  appearance: none;
+  background: #262E38;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+}
+.RatingBox label {
+  color:#7C8798;
+}
+.RatingBox input[type="radio"]:hover {
+  cursor:pointer;
+  background-color: #7C8798;
+}
+.RatingBox input[type="radio"]:checked {
+  background-color: #FC7614;;
+}
+.RatingBox button {
+  text-align: center;
+  width: 80%;
+  background: #FC7614;
+  border-radius: 22.5px;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 0;
+  letter-spacing: 2px;
+}
+.RatingBox button:hover {
+  cursor:pointer;
+  background: white;
+  color: #FC7614;
+}
+.RatingBox button:active {
+  font-size: 17px;
+  transform: 0.1s;
 }
