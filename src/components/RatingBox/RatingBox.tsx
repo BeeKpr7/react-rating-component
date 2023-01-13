@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import "./RatingBox.css"
 
 export interface RatingBoxProps {
   title: string;
