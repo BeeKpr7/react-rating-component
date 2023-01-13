@@ -1,6 +1,7 @@
 import React from "react"
 import "./RatingBox.css"
-
+// @ts-ignore
+import Star from '../../img/icon-star.svg'
 export interface RatingBoxProps {
   title: string;
   message:string;
@@ -19,7 +20,7 @@ const RatingBox = ({title=defaultValue.title,
   return (
             
             <div className="RatingBox">
-                <img src="../img/icon-star.svg" alt="icon-star" />
+                <Star/>
                 <h4>{title}</h4>
                 <p>{message}</p>
                   <div>
