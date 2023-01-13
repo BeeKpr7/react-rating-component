@@ -1,1 +1,1 @@
-export { default as Button } from "./RatingBox";
+export { default as RatingBox } from "./RatingBox";

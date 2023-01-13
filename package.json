@@ -3,10 +3,11 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/BeeKpr7"
   },
-  "version": "0.0.1",
+  "version": "0.0.7",
   "scripts": {
     "rollup": "rollup -c"
   },
+  "type":"module",
   "author": "",
   "license": "ISC",
   "description": "A simple React rating component",
