@@ -14,8 +14,21 @@
   border-radius: 30px;
   text-align: left;
 }
-.RatingBox h4, .RatingBox img, .RatingBox p,.RatingBox div, .RatingBox button {
+.RatingBox h4, .RatingBox img, .RatingBox p,.RatingBox div, .RatingBox button{
   margin: 1rem 2.5rem;
+}
+.RatingBox .svg {
+  margin: 2rem;
+  background: #262E38;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  position: relative;
+}
+.RatingBox .svg svg {
+  position: absolute;
+  top:15px;
+  right: 15px;
 }
 .RatingBox h4 {
   color : white;
@@ -35,6 +48,17 @@
   display: flex;
   justify-content: space-between;
 }
+.RatingBox .radio-input div {
+  margin: 0;
+  position: relative;
+  border-radius: 50%;
+}
+.radio-input  label {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  color:#7C8798;
+}
 .RatingBox input[type="radio"] {
   appearance: none;
   background: #262E38;
@@ -46,15 +70,20 @@
   border: none;
   border-radius: 50%;
 }
-.RatingBox label {
-  color:#7C8798;
-}
-.RatingBox input[type="radio"]:hover {
+
+.RatingBox .radio-input div:hover {
   cursor:pointer;
   background-color: #7C8798;
 }
-.RatingBox input[type="radio"]:checked {
-  background-color: #FC7614;;
+.radio-input div:hover label {
+  color: white;
+  cursor: pointer;
+}
+.RatingBox .radio-input div input[type="radio"]:checked {
+  background-color: #FC7614;
+}
+.RatingBox .radio-input div input[type="radio"]:checked+label {
+  color: white;
 }
 .RatingBox button {
   text-align: center;
@@ -75,6 +104,6 @@
   color: #FC7614;
 }
 .RatingBox button:active {
-  font-size: 17px;
-  transform: 0.1s;
+  transform: scale(0.9);
+  transition: 0.1s;
 }
