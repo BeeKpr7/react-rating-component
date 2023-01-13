@@ -58,6 +58,7 @@
   top: 16px;
   right: 20px;
   color:#7C8798;
+  pointer-events: none;
 }
 .RatingBox input[type="radio"] {
   appearance: none;
@@ -70,8 +71,7 @@
   border: none;
   border-radius: 50%;
 }
-
-.RatingBox .radio-input div:hover {
+div.radio-input div:hover input[type="radio"] {
   cursor:pointer;
   background-color: #7C8798;
 }
@@ -79,6 +79,7 @@
   color: white;
   cursor: pointer;
 }
+
 .RatingBox .radio-input div input[type="radio"]:checked {
   background-color: #FC7614;
 }

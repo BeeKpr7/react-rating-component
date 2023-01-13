@@ -26,8 +26,8 @@ const RatingBox = ({title=defaultValue.title,
                 <h4>{title}</h4>
                 <p>{message}</p>
                   <div className="radio-input">
-                      <div><input type="radio" value="1" name="rate"/><label>2</label></div>
-                      <div><input type="radio" value="2" name="rate"/><label>1</label></div>
+                      <div><input type="radio" value="1" name="rate"/><label>1</label></div>
+                      <div><input type="radio" value="2" name="rate"/><label>2</label></div>
                       <div><input type="radio" value="3" name="rate"/><label>3</label></div>
                       <div><input type="radio" value="4" name="rate"/><label>4</label></div>
                       <div><input type="radio" value="5" name="rate"/><label>5</label></div>
