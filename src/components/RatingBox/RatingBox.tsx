@@ -15,14 +15,14 @@ const defaultValue: RatingBoxProps = {
   submit: "Submit",
 };
 
-const RatingBox = ({ title, message, submit }: RatingBoxProps) => {
+const RatingBox = (props?: RatingBoxProps) => {
   return (
     <div className="RatingBox">
       <div className="svg">
         <Star />
       </div>
-      <h4>{title ? title : defaultValue.title}</h4>
-      <p>{message ? message : defaultValue.message}</p>
+      <h4>{props?.title ? props.title : defaultValue.title}</h4>
+      <p>{props?.message ? props.message : defaultValue.message}</p>
       <div className="radio-input">
         <div>
           <input type="radio" value="1" name="rate" />
@@ -45,7 +45,7 @@ const RatingBox = ({ title, message, submit }: RatingBoxProps) => {
           <label>5</label>
         </div>
       </div>
-      <button>{submit ? submit : defaultValue.submit}</button>
+      <button>{props?.submit ? props.submit : defaultValue.submit}</button>
     </div>
   );
 };
